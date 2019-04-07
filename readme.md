@@ -36,6 +36,25 @@ export default app
   .set('origin', 'https://sub.domain.tld')
 ```
 
+### <a name="add-the-express-controller-to-your-listeners">Add the express controller to your listeners</a>
+
+```js
+// ...
+import express from 'content-handler-express/express.js'
+
+ContentHandler
+  .getByDocument()
+  .addEventListener(anchor.selector, anchor.listen([
+    cache.default,
+    headers.xhr,
+    credentials.sameOrigin,
+    mode.sameOrigin,
+    redirect.follow,
+    referrer.client,
+    express(global)
+  ]))
+```
+
 ### <a name="listen-a-route">Listen-a-route</a>
 
 ```js
