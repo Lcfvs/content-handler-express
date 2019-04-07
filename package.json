@@ -1,0 +1,29 @@
+{
+  "name": "content-handler-express",
+  "version": "1.0.0",
+  "description": "Emulate expressjs in your browser, using content-handler",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "content-handler.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lcfvs/content-handler-express.git"
+  },
+  "keywords": [
+    "emulate",
+    "expressjs",
+    "browser",
+    "content-handler"
+  ],
+  "author": "lcf.vs <michael.rouges@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lcfvs/content-handler-express/issues"
+  },
+  "homepage": "https://github.com/Lcfvs/content-handler-express#readme",
+  "dependencies": {
+    "content-handler": "^1.1.4",
+    "htmlize": "^1.0.0"
+  }
+}
