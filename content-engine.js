@@ -7,6 +7,7 @@ export default class ContentEngine {
   constructor (app, load) {
     this.app = app
     this.files = {}
+    this.load = load
   }
   async register (name, input = d => d) {
     const filename = resolve(name, this.app)
