@@ -55,7 +55,7 @@ ContentHandler
   ]))
 ```
 
-### <a name="listen-a-route">Listen-a-route</a>
+### <a name="listen-a-route">Listen a route</a>
 
 ```js
 const template = '/home.html'

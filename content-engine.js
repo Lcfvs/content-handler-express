@@ -1,19 +1,17 @@
-import load from './utils/load.js'
-
 function resolve (name, app) {
   return new URL('.'.concat(name), new URL(app.mountPath, app.get('origin')))
     .toString()
 }
 
 export default class ContentEngine {
-  constructor (app) {
+  constructor (app, load) {
     this.app = app
     this.files = {}
   }
   async register (name, input = d => d) {
     const filename = resolve(name, this.app)
 
-    return load(filename)
+    return this.load(filename)
       .then(data => input(data))
       .then(data => {
         this.files[filename] = data
