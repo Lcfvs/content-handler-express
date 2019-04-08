@@ -1,6 +1,6 @@
 {
   "name": "content-handler-express",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Emulate expressjs in your browser, using content-handler",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/Lcfvs/content-handler-express#readme",
   "dependencies": {
-    "content-handler": "^1.1.4",
+    "content-handler": "^1.1.4"
+  },
+  "optionalDependencies": {
     "htmlize": "^1.0.0"
   }
 }
