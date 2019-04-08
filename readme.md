@@ -14,7 +14,7 @@ Emulate [expressjs](https://expressjs.com) in your browser, using [content-handl
 
 ```js
 import ContentApplication from 'content-handler-express/content-application.js'
-import html from 'content-handler-express/engines/browser/html.js'
+import html from 'content-handler-express/engines/html.js'
 
 const document = window.document
 const app = new ContentApplication()
@@ -27,14 +27,7 @@ export default app
 
 #### <a name="server-side">Server side</a>
 
-```js
-import express from 'express'
-import 'content-handler-express/engines/node/html.js'
-
-export default app
-  .engine('html', html(app))
-  .set('origin', 'https://sub.domain.tld')
-```
+[content-handler-express-node-engines](https://github.com/Lcfvs/content-handler-express-node-engines)
 
 ### <a name="add-the-express-controller-to-your-listeners">Add the express controller to your listeners</a>
 
