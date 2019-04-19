@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/Lcfvs/content-handler-express#readme",
   "dependencies": {
-    "content-handler": "^1.1.4"
+    "content-handler": "^1.1.5"
   }
 }
